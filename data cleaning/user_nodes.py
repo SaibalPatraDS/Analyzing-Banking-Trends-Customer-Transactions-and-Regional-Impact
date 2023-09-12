@@ -11,9 +11,11 @@ def read_csv():
 
 '''
 **Check the null values**
-The function check_null_values() reads a DataFrame from read_csv  function which returns data in the user_nodes csv file and the it needs to  calculates the sum of null (missing) values for each column in the DataFrame.
+The function check_null_values() reads a DataFrame from read_csv  function which returns data in the user_nodes csv file and 
+the it needs to  calculates the sum of null (missing) values for each column in the DataFrame.
 
-It then returns a Series containing the count of null values for each column in the DataFrame. This provides insights into the presence and extent of missing data in the dataset after duplicates have been dropped.
+It then returns a Series containing the count of null values for each column in the DataFrame. 
+This provides insights into the presence and extent of missing data in the dataset after duplicates have been dropped.
 
 
 '''
@@ -29,7 +31,8 @@ def check_null_values():
 **Find the Duplicate Values**
 Here, We need to check for duplicate values in a dataset  for each column.
 
-Finally, the counts of duplicated values are returned as a integer. This information can be useful in identifying duplicate data and deciding on appropriate strategies to deal with them, such as imputation or deletion.
+Finally, the counts of duplicated values are returned as a integer. This information can be useful in identifying duplicate data and deciding on appropriate strategies to deal with them, 
+such as imputation or deletion.
 '''
 
 # Function to check for duplicate rows in the DataFrame
@@ -57,7 +60,12 @@ def drop_duplicates():
 
 
 '''
-The provided function, `data_cleaning()`, aims to enhance the quality and structure of a given DataFrame. It starts by removing duplicate rows to ensure data consistency. Subsequently, the function eliminates the columns "has_loan" and "is_act" from the DataFrame, streamlining it for analysis. To improve clarity, column names are adjusted: 'id_' becomes 'consumer_id', 'area_id_' is transformed to 'region_id', 'node_id_' is changed to 'node_id', 'act_date' is renamed to 'start_date', and 'deact_date' is converted to 'end_date'. The final step involves exporting the cleaned DataFrame to a CSV file named 'user_nodes_cleaned.csv', without including the index column. Upon completion, the function returns the cleaned DataFrame, now prepared for further analysis.
+The provided function, `data_cleaning()`, aims to enhance the quality and structure of a given DataFrame. It starts by removing duplicate rows to ensure data consistency. 
+Subsequently, the function eliminates the columns "has_loan" and "is_act" from the DataFrame, streamlining it for analysis. 
+To improve clarity, column names are adjusted: 'id_' becomes 'consumer_id', 'area_id_' is transformed to 'region_id', 'node_id_' is changed to 'node_id', 
+'act_date' is renamed to 'start_date', and 'deact_date' is converted to 'end_date'. 
+The final step involves exporting the cleaned DataFrame to a CSV file named 'user_nodes_cleaned.csv', without including the index column. 
+Upon completion, the function returns the cleaned DataFrame, now prepared for further analysis.
 '''
 
 def data_cleaning():
