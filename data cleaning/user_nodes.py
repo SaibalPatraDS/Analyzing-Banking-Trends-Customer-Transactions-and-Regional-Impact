@@ -55,6 +55,7 @@ def drop_duplicates():
     df.drop_duplicates(inplace = True)
     return df
 
+
 '''
 The provided function, `data_cleaning()`, aims to enhance the quality and structure of a given DataFrame. It starts by removing duplicate rows to ensure data consistency. Subsequently, the function eliminates the columns "has_loan" and "is_act" from the DataFrame, streamlining it for analysis. To improve clarity, column names are adjusted: 'id_' becomes 'consumer_id', 'area_id_' is transformed to 'region_id', 'node_id_' is changed to 'node_id', 'act_date' is renamed to 'start_date', and 'deact_date' is converted to 'end_date'. The final step involves exporting the cleaned DataFrame to a CSV file named 'user_nodes_cleaned.csv', without including the index column. Upon completion, the function returns the cleaned DataFrame, now prepared for further analysis.
 '''
